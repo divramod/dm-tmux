@@ -1,6 +1,8 @@
 # dm-tmux
 
 ## Description
+* a command line tmux helper writte in nodejs
+* i started this, because i often had the feeling, that i want to copy the current layout and create a new one out of it
 
 ## Shortcut
 ```
