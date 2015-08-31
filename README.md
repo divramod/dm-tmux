@@ -18,12 +18,12 @@ npm install dm-tmux -g
 ## Tasks
 
 ### dmt yml [directory [fileName]]
+* creates a tmuxinator yml-file which copies the current tmuxinator layout. getting the layout from tmux list-windows.
 * examples
 ```
 dmt yml
-dmt yml ~/.tmuxinator test
+dmt yml ~/.tmuxinator test // creates ~/.tmuxinator/test.yml with current layout
 ```
-* creates a tmuxinator yml-file which copies the current tmuxinator layout. getting the layout from tmux list-windows.
 
 ## Config
 * you can place a .dm-tmux.json file in your home directory (~/.dm-tmux.json)
@@ -34,3 +34,5 @@ dmt yml ~/.tmuxinator test
 }
 ```
 * ymlFilePath: says where the yml-file should be placed
+
+## Lessons Learned

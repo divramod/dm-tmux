@@ -25,6 +25,7 @@ job.start = co.wrap(function*() {
     inquirer.prompt(questions, function(answers) {
         console.log(JSON.stringify(answers, null, "  "));
     });
+    return yield Promise.resolve();
 }); // job.start()
 
 // =========== [ MODULE EXPORT ] ===========

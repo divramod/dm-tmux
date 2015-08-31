@@ -119,9 +119,12 @@ job.start = co.wrap(function*(directory, fileName) {
             // =========== [ create yml file ] ===========
             var ymlFileString = getYmlFileString(tmuxWindows, filePath, fileName, root);
             ymlFileString.to(filePath);
-            exec('cat ' + filePath, {
-              silent: false
+            var command = "vim " + filePath;
+            var spawn = require('child_process').spawnSync;
+            var myProcess = spawn('sh', ['-c', command], {
+              stdio: 'inherit'
             });
+
         } else {
             for (var i = 0, l = errors.length; i < l; i++) {
                 var e = errors[i];

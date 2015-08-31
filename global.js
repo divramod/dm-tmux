@@ -27,6 +27,22 @@ jobs.index = co.wrap(function*() {
             var task = require("./tasks/createYmlFromCurrentLayout/index.js");
             yield task.start();
         }
+        // =========== [ todo ] ===========
+        else if (["todo"].indexOf(argv2) > -1) {
+            require("dm-npm").todo(__dirname);
+        }
+        // =========== [ idea ] ===========
+        else if (["idea"].indexOf(argv2) > -1) {
+            require("dm-npm").idea(__dirname);
+        }
+        // =========== [ prompt ] ===========
+        else if (["prompt","p"].indexOf(argv2) > -1) {
+            require("dm-npm").prompt(__dirname);
+        }
+
+
+        // automatically add tasks here
+
         // =========== [ help ] ===========
         else {
             var task = require("./tasks/help/index.js");
