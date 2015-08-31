@@ -17,7 +17,7 @@ npm install dm-tmux -g
 
 ## Tasks
 
-### dmt yml [directory [<fileName>]]
+### dmt yml [directory [fileName]]
 * examples
 ```
 dmt yml
@@ -33,5 +33,4 @@ dmt yml ~/.tmuxinator test
     "ymlFilePath": "~/.tmuxinator"
 }
 ```
-
 * ymlFilePath: says where the yml-file should be placed
