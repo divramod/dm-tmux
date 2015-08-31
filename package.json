@@ -1,0 +1,45 @@
+{
+  "private": false,
+  "name": "dm-tmux",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --require co-mocha --watch --reporter landing",
+    "start": "node --harmony ./bin/dm-tmux"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divramod/dm-tmux.git"
+  },
+  "keywords": [
+    "npm",
+    "template"
+  ],
+  "author": "Arvid Petermann <arvidpetermann@gmail.com> (http://arvidpetermann.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divramod/dm-tmux/issues"
+  },
+  "homepage": "https://github.com/divramod/dm-tmux",
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "co-mocha": "^1.1.0",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "co": "^4.4.0",
+    "co-prompt": "^1.0.0",
+    "colors": "~1.0.3",
+    "commander": "^2.6.0",
+    "dm-path": "0.0.2",
+    "dm-prompt": "^0.1.17",
+    "inquirer": "^0.9.0",
+    "shelljs": "^0.3.0",
+    "suppose": "^0.3.0"
+  },
+  "bin": {
+    "dmt": "./bin/dm-tmux",
+    "dm-tmux": "./bin/dm-tmux"
+  }
+}
