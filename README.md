@@ -1,6 +1,12 @@
+# dm-tmux
+
 ## Description
-* dm-tmux
-* Shortcut: dmt
+
+## Install
+
+```
+npm install dm-tmux -g
+```
 
 ## Tasks
 
