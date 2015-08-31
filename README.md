@@ -34,3 +34,4 @@ dmt yml ~/.tmuxinator test
 }
 ```
 
+* ymlFilePath: says where the yml-file should be placed
